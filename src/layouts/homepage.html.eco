@@ -31,10 +31,16 @@ layout: "default"
   </div>
 </div>
 
-<div class="yzj-header" id="content">
-  <div class="container">
+<!-- my header
+==================================================== -->
+<div id="skrollr-body">
+
+<div class="yzj-header" id="content" data-0="background-position:0px 0px;" data-500="background-position:0px -150px;">
+  <div class="container" data-0="opacity: 1" data-100="opacity: 0">
     <h1><%= @getPreparedPageTitle() %></h1>
   </div>
 </div>
 
 <%- @content %>
+
+</div>
