@@ -1,0 +1,50 @@
+---
+layout: "default"
+---
+
+<!-- Nav Bar
+==================================================== -->
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+
+    <div class="navbar-header">
+      <a href="../" class="navbar-brand">Bootstrapping</a>
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <div class="navbar-collapse collapse" id="navbar-main">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a>Etymology</a>
+        </li>
+        <li>
+          <a>Computing</a>
+        </li>
+        <li>
+          <a>Research</a>
+        </li>
+        <li>
+          <a>Statistics</a>
+        </li>
+        <li>
+          <a>Biology</a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+
+<div class="yzj-header" id="content">
+  <div class="container">
+    <h1>Getting started</h1>
+  </div>
+</div>
+
+<%- @content %>
