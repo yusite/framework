@@ -9,6 +9,7 @@
   "dependencies": {
     "docpad": "~6.64.2",
     "docpad-plugin-cleanurls": "~2.7.0",
+    "docpad-plugin-coffeescript": "~2.4.0",
     "docpad-plugin-eco": "~2.0.3",
     "docpad-plugin-stylus": "~2.6.0"
   },
