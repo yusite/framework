@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "docpad": "~6.64.0",
+    "docpad-plugin-cleanurls": "~2.7.0",
     "docpad-plugin-eco": "~2.0.3",
     "docpad-plugin-stylus": "~2.6.0"
   },
