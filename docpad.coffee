@@ -4,9 +4,11 @@
 # Define the DocPad Configuration
 docpadConfig = {
 	collections:
-		subpages: ->
-			@getCollection("html").findAllLive({relativeDirPath:/\w+/}).on "add", (pages) ->
+		homePageLayout: ->
+			@getCollection("html").findAllLive().on "add", (pages) ->
 				pages.setMetaDefaults({layout:"homepage"})
+		subpages: ->
+			@getCollection("html").findAllLive({relativeOutDirPath:/\w+/})
 
 	templateData:
 		site:
