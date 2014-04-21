@@ -3,6 +3,11 @@
 
 # Define the DocPad Configuration
 docpadConfig = {
+	collections:
+		pages: ->
+			@getCollection("html").findAllLive({isPage:true}).on "add", (model) ->
+				model.setMetaDefaults({layout:"homepage"})
+
 	templateData:
 		site:
 			url: "http://yuz.me"
@@ -15,6 +20,9 @@ docpadConfig = {
 				"#{@document.title} | #{@site.title}"
 			else
 				@site.title
+
+		getPreparedPageTitle: ->
+			@document.title or @site.title
 
 		getPreparedDescription: ->
 			@document.description or @site.description
