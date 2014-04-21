@@ -19,7 +19,7 @@ layout: "default"
 
     <div class="navbar-collapse collapse" id="navbar-main">
       <ul class="nav navbar-nav">
-        <% for page in @getCollection("pages").toJSON(): %>
+        <% for page in @getCollection("subpages").toJSON(): %>
           <li class="<%- if page.id is @document.id then 'active' else 'inactive' %>">
             <a href="<%- page.url %>">
               <%= page.title %>

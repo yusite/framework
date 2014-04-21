@@ -4,13 +4,13 @@
 # Define the DocPad Configuration
 docpadConfig = {
 	collections:
-		pages: ->
-			@getCollection("html").findAllLive({isPage:true}).on "add", (model) ->
-				model.setMetaDefaults({layout:"homepage"})
+		subpages: ->
+			@getCollection("html").findAllLive({relativeDirPath:/\w+/}).on "add", (pages) ->
+				pages.setMetaDefaults({layout:"homepage"})
 
 	templateData:
 		site:
-			url: "http://yuz.me"
+			url: "http://localhost:9778"
 			title: "Default Title"
 			description: "your description"
 			keywords: "keywords here"
