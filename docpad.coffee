@@ -5,8 +5,14 @@
 docpadConfig = {
 	collections:
 		homePageLayout: ->
-			@getCollection("html").findAllLive().on "add", (pages) ->
-				pages.setMetaDefaults({layout:"homepage"})
+			@getCollection("documents").findAllLive({extension:"html"}).on "add", (page) ->
+				page.setMetaDefaults({layout:"homepage"})
+				iUrl = page.getMeta("titleIsPath")
+				if iUrl
+					theString = page.getMeta("title").replace /\s/g, "-"
+					newUrl = theString + "/index.html"
+					page.setMetaDefaults({outPath:newUrl})
+
 		subpages: ->
 			@getCollection("html").findAllLive({relativeOutDirPath:/\w+/})
 

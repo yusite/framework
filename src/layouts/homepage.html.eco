@@ -1,7 +1,6 @@
 ---
 layout: "default"
 ---
-
 <!-- Nav Bar
 ==================================================== -->
 <div class="navbar navbar-default navbar-fixed-top">
@@ -31,7 +30,6 @@ layout: "default"
 
   </div>
 </div>
-
 
 <div class="yzj-header" id="content">
   <div class="container">
